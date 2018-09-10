@@ -14,12 +14,12 @@ $$p(z|X)=\frac{p(X|z)p(z)}{\int_zp(X|z)p(z)dz}$$
 
 $$
 \begin{aligned}
-KL(q(z)||p(z|X))&=\int q(z)\log\frac{q(z)}{p(z|X)}dz\\
-&=\int q(z)\left[\log q(z)-\log p(z|X)\right]dz\\
-&=\int q(z)\left[\log q(z)-\log \frac{p(X|z)p(z)}{p(X)}\right]dz\\
-&=\int q(z)\left[\log q(z)-\log p(X|z)-\log p(z)+\log p(X)\right]dz\\
-&=\int q(z)\left[\log q(z)-\log p(X|z)-\log p(z)\right]dz+\log p(X)\\
-&=KL(q(z)||p(z))-\int q(z)\log p(X|z)dz+\log p(X)\\
+KL(q(z)||p(z|X))&=\int q(z)\log\frac{q(z)}{p(z|X)}dz\\\\
+&=\int q(z)\left[\log q(z)-\log p(z|X)\right]dz\\\\
+&=\int q(z)\left[\log q(z)-\log \frac{p(X|z)p(z)}{p(X)}\right]dz\\\\
+&=\int q(z)\left[\log q(z)-\log p(X|z)-\log p(z)+\log p(X)\right]dz\\\\
+&=\int q(z)\left[\log q(z)-\log p(X|z)-\log p(z)\right]dz+\log p(X)\\\\
+&=KL(q(z)||p(z))-\int q(z)\log p(X|z)dz+\log p(X)\\\\
 \end{aligned}
 $$
 $$
