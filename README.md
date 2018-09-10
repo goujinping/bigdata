@@ -22,3 +22,12 @@ KL(q(z)||p(z|X))&=\int q(z)\log\frac{q(z)}{p(z|X)}dz\\
 &=KL(q(z)||p(z))-\int q(z)\log p(X|z)dz+\log p(X)\\
 \end{aligned}
 $$
+$$
+\begin{array}{c|lcr}
+n & \text{Left} & \text{Center} & \text{Right} \\
+\hline
+1 & 0.24 & 1 & 125 \\
+2 & -1 & 189 & -8 \\
+3 & -20 & 2000 & 1+10i
+\end{array}
+$$
