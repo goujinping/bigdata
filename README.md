@@ -12,3 +12,13 @@ $$p(z|X)=\frac{p(X|z)p(z)}{\int_zp(X|z)p(z)dz}$$
 
 这个公式在复杂的模型和大规模数据面前极难求解。为了方便问题的解决，我们用一个新的函数代替后验概率，那么这两个概率分布需要尽可能近，使用$KL$散度衡量两者的相近程度，则
 
+$$
+\begin{aligned}
+KL(q(z)||p(z|X))&=\int q(z)\log\frac{q(z)}{p(z|X)}dz\\
+&=\int q(z)\left[\log q(z)-\log p(z|X)\right]dz\\
+&=\int q(z)\left[\log q(z)-\log \frac{p(X|z)p(z)}{p(X)}\right]dz\\
+&=\int q(z)\left[\log q(z)-\log p(X|z)-\log p(z)+\log p(X)\right]dz\\
+&=\int q(z)\left[\log q(z)-\log p(X|z)-\log p(z)\right]dz+\log p(X)\\
+&=KL(q(z)||p(z))-\int q(z)\log p(X|z)dz+\log p(X)\\
+\end{aligned}
+$$
