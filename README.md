@@ -24,18 +24,18 @@ KL(q(z)||p(z|X))&=\int q(z)\log\frac{q(z)}{p(z|X)}dz\\\\
 $$
 $$
 \begin{array}{c|lcr}
-n & \text{Left} & \text{Center} & \text{Right} \\
-1 & 0.24 & 1 & 125 \\
-2 & -1 & 189 & -8 \\
+n & \text{Left} & \text{Center} & \text{Right} \\\\
+1 & 0.24 & 1 & 125 \\\\
+2 & -1 & 189 & -8 \\\\
 3 & -20 & 2000 & 1+10i
 \end{array}
 $$
 
 $$
   \begin{pmatrix}
-  1 & a_1 & a_1^2 & \cdots & a_1^n\\
-  1 & a_2 & a_2^2 & \cdots & a_2^n \\
-  \vdots & \vdots & \ddots & \vdots \\  
-  1 & a_n & a_n^2 & \cdots & a_n^n  \\
+  1 & a_1 & a_1^2 & \cdots & a_1^n\\\\
+  1 & a_2 & a_2^2 & \cdots & a_2^n \\\\
+  \vdots & \vdots & \ddots & \vdots \\\\  
+  1 & a_n & a_n^2 & \cdots & a_n^n  \\\\
   \end{pmatrix}
 $$
